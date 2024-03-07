@@ -1,0 +1,58 @@
+/* Add / Fix the text background  */
+
+@font-face {
+    font-family: header-fonts;
+    src: url('./Naville.ttf');
+}
+
+body {
+    font-size: 2rem;
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.4;
+    background-color: white;
+}
+
+section {
+    text-align: center;
+
+    /* The borders must have equal width, padding and margin */
+    border-width: 5px;
+    padding: 5px;
+    margin: 30px 25px;
+
+    /* The top and bottom sides of the borders must have different colors */
+    border-color: red blue green blue;
+
+    /* The sides of the borders must be in two (2) distinct styles */
+    border-style: solid dotted solid dashed;
+}
+
+section li {
+    list-style-type: none;
+}
+
+/* .foods-container {
+    color: black;
+    background-color: #FFD203;
+} */
+
+.months-container {
+    position: relative;
+    background-color: #040205;
+    color: white;
+}
+
+.text-background {
+    margin: 3rem;
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+    bottom: 0; 
+    z-index: -1; 
+    transition: 0.5s ease-out;
+    text-transform: uppercase;
+    font-size: 5.5rem;
+    font-family: header-fonts;
+    letter-spacing: 20px;
+    color:white;
+}
